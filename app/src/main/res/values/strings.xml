@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Meds</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Now, you can order your medicines online through websites and apps which don’t require you to stand at long queues at the pharmacy stores. You can just upload a picture of your prescription using your smartphone camera and get all medicines delivered right to your home.The new online medicine ordering apps are even offering attractive discounts to gather large customer bases. According to the medical data analyst firm Tracxn, over 60 online pharmacies are operating in India and engaged in the delivery of medicines through websites and apps.</string>
+</resources>

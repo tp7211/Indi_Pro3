@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/roppinsregular"
+                    android:gravity="center"
+                    android:text="Sign In"
+                    android:textColor="#062228"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/ic_signin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:fontFamily="@font/roppinsregular"
+                    android:gravity="bottom"
+                    android:text="Welcome"
+                    android:textColor="#062228"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/etmobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.18"
+                    android:background="@drawable/round_edittext"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roppinsregular"
+                    android:hint="Mobile No"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:textColor="#5C6A80"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_Logmobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_redi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/roppinsregular"
+                        android:text="Please enter mobile number"
+                        android:textColor="#FF3F00"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.18"
+                    android:background="@drawable/round_edittext"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roppinsregular"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="17dp"
+                    android:textColor="#5C6A80"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_Logpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_redi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/roppinsregular"
+                        android:text="Please enter password"
+                        android:textColor="#FF3F00"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/cbsignin"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="9dp"
+                        android:fontFamily="@font/roppinsregular"
+                        android:text="Keep me signed in"
+                        android:textColor="#545A5B"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnsignin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.14"
+                    android:background="@drawable/rounded_button"
+                    android:inputType="textCapWords"
+                    android:text="Sign in"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="01"
+                        android:fontFamily="@font/roppinsregular"
+                        android:gravity="center"
+                        android:text="Or Sign in with"
+                        android:textColor="#5C6A80"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/ivgoogle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:src="@drawable/ic_google" />
+
+                    <ImageView
+                        android:id="@+id/ivfacebook"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_weight=".25"
+                        android:src="@drawable/ic_facebook" />
+
+                    <ImageView
+                        android:id="@+id/ivlinkdin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_weight=".25"
+                        android:src="@drawable/ic_linkdin" />
+
+
+                    <ImageView
+                        android:id="@+id/ivtwitter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_weight=".25"
+                        android:src="@drawable/ic_twitter" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_weight=".3"
+                        android:fontFamily="@font/roppinsregular"
+                        android:gravity="right"
+                        android:text="New User?"
+                        android:textColor="#5C6A80"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvcreateaccount"
+                        android:layout_width="0dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight=".6"
+                        android:fontFamily="@font/roppinsregular"
+                        android:text="Create an account"
+                        android:textColor="#14B19E"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
